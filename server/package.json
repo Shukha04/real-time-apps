@@ -1,0 +1,23 @@
+{
+	"name": "server",
+	"version": "0.1.0",
+	"main": "index.js",
+	"author": "Shukhrat Rustamov <shukhrat.rustamov04@gmail.com> (https://www.instagram.com/__shukha__/)",
+	"license": "MIT",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.2",
+		"ws": "^8.4.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	},
+	"scripts": {
+		"dev-lp": "nodemon long-polling.js",
+		"dev-es": "nodemon event-sourcing.js",
+		"dev-ws": "nodemon websocket.js",
+		"start-lp": "node long-polling.js",
+		"start-es": "node event-sourcing.js",
+		"start-ws": "node websocket.js"
+	}
+}
